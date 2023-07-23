@@ -3,9 +3,10 @@
 /************************* PRINT UNSIGNED NUMBER *************************/
 /**
  * print_unsigned - Prints an unsigned number
+ * by Leonard Mbasela and Peter McMillan.
  * @types: List a of arguments
  * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
+ * @flags: Calculates active flags
  * @width: get width
  * @precision: Precision specification
  * @size: Size specifier
@@ -35,12 +36,12 @@ int print_unsigned(va_list types, char buffer[],
 	return (write_unsgnd(0, i, buffer, flags, width, precision, size));
 }
 
-/************* PRINT UNSIGNED NUMBER IN OCTAL  ****************/
+/************* PRINT UNSIGNED NUMBER IN OCTAL ****************/
 /**
  * print_octal - Prints an unsigned number in octal notation
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
+ * @flags: Calculates active flags
  * @width: get width
  * @precision: Precision specification
  * @size: Size specifier
@@ -82,7 +83,7 @@ int print_octal(va_list types, char buffer[],
  * print_hexadecimal - Prints an unsigned number in hexadecimal notation
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
+ * @flags: Calculates active flags
  * @width: get width
  * @precision: Precision specification
  * @size: Size specifier
@@ -100,7 +101,7 @@ int print_hexadecimal(va_list types, char buffer[],
  * print_hexa_upper - Prints an unsigned number in upper hexadecimal notation
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
+ * @flags: Calculates active flags
  * @width: get width
  * @precision: Precision specification
  * @size: Size specifier
@@ -119,7 +120,7 @@ int print_hexa_upper(va_list types, char buffer[],
  * @types: Lista of arguments
  * @map_to: Array of values to map the number to
  * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
+ * @flags: Calculates active flags
  * @flag_ch: Calculates active flags
  * @width: get width
  * @precision: Precision specification
@@ -159,4 +160,3 @@ int print_hexa(va_list types, char map_to[], char buffer[],
 
 	return (write_unsgnd(0, i, buffer, flags, width, precision, size));
 }
-
